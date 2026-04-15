@@ -32,7 +32,7 @@ The system behavior is controlled using a **3-position selector switch**, where 
 - **Mode 3 (State 2): Small Items Sorting**
   - The pusher is triggered **only for small boxes**
   - Large boxes are allowed to pass
-  - Provides selective sorting based on product type
+  - Provides selective sorting based on product type.
 ---
 
 ## 📸 Project Preview
