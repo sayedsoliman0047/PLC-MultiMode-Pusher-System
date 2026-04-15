@@ -17,54 +17,22 @@ The system supports multiple operation modes, allowing dynamic control strategie
 ---
 
 ## ⚙️ Operating Modes
-The system behavior is controlled using a **3-position selector switch**:
+The system behavior is controlled using a **3-position selector switch**, where each mode defines a different sorting strategy:
 
-- **Mode 1 (State 1): Manual / Local Control**
-  - Direct control over conveyor and pusher
-  - Used for testing and troubleshooting
+- **Mode 1 (State 1): Full Sorting (All Items)**
+  - The pusher is activated for **all detected boxes**
+  - Both large and small items are diverted
+  - Used for full discharge or system testing
 
-- **Mode 2 (Neutral State): Idle / Safe Mode**
-  - System remains inactive
-  - Ensures safe transitions between modes
+- **Mode 2 (Neutral State): Large Items Sorting**
+  - The pusher is triggered **only for large boxes**
+  - Small boxes continue on the conveyor without interaction
+  - Sorting decision based on diffuse sensor detection logic
 
-- **Mode 3 (State 2): Automatic Mode**
-  - Fully automated sorting process
-  - Uses diffuse sensors to trigger pusher operations
-
----
-
-## 🧠 Control Logic Highlights
-The control logic is designed using industrial-grade practices:
-
-- **State-Based Logic:**
-  - Selector switch determines system behavior using dedicated state bits
-
-- **Pusher Sequence Control:**
-  - Activated based on sensor detection (%I0.6, %I0.7)
-  - Controlled via output (%Q0.1)
-
-- **Position Feedback System:**
-  - Back Limit (%I0.4) and Front Limit (%I0.5)
-  - Ensures safe and complete pusher cycles
-
-- **Safety Interlocks:**
-  - NC Stop button priority
-  - Prevents actuation if unsafe conditions are detected
-
----
-
-## 🔌 I/O Configuration
-
-| Inputs (Sensors)        | Address | Outputs (Actuators)      | Address |
-|------------------------|--------|--------------------------|--------|
-| Start Button           | %I0.0  | Conveyor Belt (4m)       | %Q0.0  |
-| Stop Button            | %I0.1  | Pusher (Extend)          | %Q0.1  |
-| Selector State 1       | %I0.2  | Start Indicator Light    | %Q0.2  |
-| Selector State 2       | %I0.3  | Stop Indicator Light     | %Q0.3  |
-| Pusher Back Limit      | %I0.4  |                          |        |
-| Pusher Front Limit     | %I0.5  |                          |        |
-| Diffuse Sensors (1/2)  | %I0.6/7|                          |        |
-
+- **Mode 3 (State 2): Small Items Sorting**
+  - The pusher is triggered **only for small boxes**
+  - Large boxes are allowed to pass
+  - Provides selective sorting based on product type
 ---
 
 ## 📸 Project Preview
