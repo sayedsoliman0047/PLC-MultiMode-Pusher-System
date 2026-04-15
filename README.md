@@ -50,7 +50,7 @@ The system behavior is controlled using a **3-position selector switch**, where 
 ---
 
 ## 🎥 Demo Video
-👉 [Watch the system in action](PUT_YOUR_VIDEO_LINK_HERE)
+👉 [Watch the system in action](video.mp4)
 
 ---
 
