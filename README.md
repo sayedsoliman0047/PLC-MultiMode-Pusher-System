@@ -38,14 +38,14 @@ The system behavior is controlled using a **3-position selector switch**, where 
 ## 📸 Project Preview
 
 ### 🔹 Driver & I/O Configuration
-![Driver Setup](0.jpg)
+![Driver Setup](0.png)
 
 ### 🔹 Ladder Logic Implementation
 ![Network 1-2](1.png)  
 ![Network 3](2.png)
 
 ### 🔹 Factory I/O Scene
-![Factory Scene](factory_scene.jpg)
+![Factory Scene](factory_scene.png)
 
 ---
 
