@@ -1,5 +1,4 @@
 # PLC-MultiMode-Pusher-System
-# Multi-Mode Industrial Pusher & Sorting System (TIA Portal & Factory I/O)
 
 ## 📌 Project Overview
 This project demonstrates a flexible industrial automation system featuring a conveyor, pneumatic pusher, and a 3-position selector switch.  
@@ -19,12 +18,12 @@ The system supports multiple operation modes, allowing dynamic control strategie
 ## ⚙️ Operating Modes
 The system behavior is controlled using a **3-position selector switch**, where each mode defines a different sorting strategy:
 
-- **Mode 1 (State 1): Full Sorting (All Items)**
+- **Mode 1 (Neutral State): Full Sorting (All Items)**
   - The pusher is activated for **all detected boxes**
   - Both large and small items are diverted
   - Used for full discharge or system testing
 
-- **Mode 2 (Neutral State): Large Items Sorting**
+- **Mode 2 (State 1): Large Items Sorting**
   - The pusher is triggered **only for large boxes**
   - Small boxes continue on the conveyor without interaction
   - Sorting decision based on diffuse sensor detection logic
@@ -70,10 +69,3 @@ The system behavior is controlled using a **3-position selector switch**, where 
 5. Select operation mode using the **Selector Switch**
 6. Press **Start** to run the system
 
----
-
-## 💡 Engineering Notes
-- System designed with modular and scalable logic structure  
-- Clear separation between manual and automatic control paths  
-- Reliable operation ensured using feedback-based actuation  
-- Suitable for real industrial adaptation with minor modifications  
