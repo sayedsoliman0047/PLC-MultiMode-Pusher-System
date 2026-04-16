@@ -1,13 +1,13 @@
 # PLC-MultiMode-Pusher-System
 
-## 📌 Project Overview
+##  Project Overview
 This project demonstrates a flexible industrial automation system featuring a conveyor, pneumatic pusher, and a 3-position selector switch.  
 
 The system supports multiple operation modes, allowing dynamic control strategies ranging from manual operation to fully automated sorting based on real-time sensor feedback.
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - **PLC Programming:** Siemens TIA Portal (S7-1200)
 - **Simulation:** Factory I/O
 - **PLC Simulation:** Siemens S7-PLCSIM
@@ -15,7 +15,7 @@ The system supports multiple operation modes, allowing dynamic control strategie
 
 ---
 
-## ⚙️ Operating Modes
+##  Operating Modes
 The system behavior is controlled using a **3-position selector switch**, where each mode defines a different sorting strategy:
 
 - **Mode 1 (Neutral State): Full Sorting (All Items)**
@@ -34,26 +34,26 @@ The system behavior is controlled using a **3-position selector switch**, where 
   - Provides selective sorting based on product type.
 ---
 
-## 📸 Project Preview
+##  Project Preview
 
-### 🔹 Driver & I/O Configuration
+###  Driver & I/O Configuration
 ![Driver Setup](0.png)
 
-### 🔹 Ladder Logic Implementation
+###  Ladder Logic Implementation
 ![Network 1-2](1.png)  
 ![Network 3](2.png)
 
-### 🔹 Factory I/O Scene
+###  Factory I/O Scene
 ![Factory Scene](factory_scene.png)
 
 ---
 
-## 🎥 Demo Video
-👉 [Watch the system in action](video.mp4)
+##  Demo Video
+ [Watch the system in action](video.mp4)
 
 ---
 
-## 📂 Project Files Included
+##  Project Files Included
 - TIA Portal Project File  
 - Factory I/O Scene File  
 - PLC Logic Screenshots  
@@ -61,7 +61,7 @@ The system behavior is controlled using a **3-position selector switch**, where 
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 1. Open the project in **TIA Portal**
 2. Start **S7-PLCSIM**
 3. Open the scene in **Factory I/O**
